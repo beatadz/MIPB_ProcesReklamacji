@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Sklep">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="StefanR">
+      <firstName>Stefan</firstName>
+      <lastName>Robak</lastName>
+      <title>Pan</title>
+      <jobTitle>Menadżer</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>stefanr@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">qwerty</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="WlodzimierzK">
+      <firstName>Włodzimierz</firstName>
+      <lastName>Kowalski</lastName>
+      <title>Pan</title>
+      <jobTitle>Pracownik działu reklamacji</jobTitle>
+      <manager>StefanR</manager>
+      <personalData/>
+      <professionalData>
+        <email>wlodekk@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">qwerty</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="MartynaC">
+      <firstName>Martyna</firstName>
+      <lastName>Cichocka</lastName>
+      <title>Pani</title>
+      <jobTitle>Pracownik działu reklamacji</jobTitle>
+      <manager>StefanR</manager>
+      <personalData/>
+      <professionalData>
+        <email>martynkac@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">qwerty</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Pracownik dzialu reklamacji">
+      <displayName>Pracownik dzialu reklamacji</displayName>
+    </role>
+    <role name="Menadzer">
+      <displayName>Menadzer</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Pracownicy">
+      <displayName>Pracownicy</displayName>
+    </group>
+    <group name="Klienci">
+      <displayName>Klienci</displayName>
+    </group>
+    <group name="Kierownictwo">
+      <displayName>Kierownictwo</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>StefanR</userName>
+      <roleName>Menadzer</roleName>
+      <groupName>Kierownictwo</groupName>
+    </membership>
+    <membership>
+      <userName>WlodzimierzK</userName>
+      <roleName>Pracownik dzialu reklamacji</roleName>
+      <groupName>Pracownicy</groupName>
+    </membership>
+    <membership>
+      <userName>MartynaC</userName>
+      <roleName>Pracownik dzialu reklamacji</roleName>
+      <groupName>Pracownicy</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
