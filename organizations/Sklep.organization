@@ -41,6 +41,18 @@
       <password encrypted="false">qwerty</password>
       <customUserInfoValues/>
     </user>
+    <user userName="AntoniD">
+      <firstName>Antoni</firstName>
+      <lastName>Domański</lastName>
+      <title>Pan</title>
+      <jobTitle>Klient</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>antonid@gmailcom</email>
+      </professionalData>
+      <password encrypted="false">qwerty</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Pracownik dzialu reklamacji">
@@ -48,6 +60,9 @@
     </role>
     <role name="Menadzer">
       <displayName>Menadzer</displayName>
+    </role>
+    <role name="Klient">
+      <displayName>Klient</displayName>
     </role>
   </roles>
   <groups>
@@ -76,6 +91,11 @@
       <userName>MartynaC</userName>
       <roleName>Pracownik dzialu reklamacji</roleName>
       <groupName>Pracownicy</groupName>
+    </membership>
+    <membership>
+      <userName>AntoniD</userName>
+      <roleName>Klient</roleName>
+      <groupName>Klienci</groupName>
     </membership>
   </memberships>
 </organization:Organization>
