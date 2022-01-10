@@ -134,7 +134,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_wZqloHF2EeyYboQFlhdC-w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_wZp-l3F2EeyYboQFlhdC-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_wZqlonF2EeyYboQFlhdC-w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_bleukHGCEeywp9JThT5IMA" name="wynik" content="93e4ccce-520d-4cdc-9485-d35aa8e9ed72" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_hnTmUHH_EeycZMF7i_aOcg" name="otrzymanieWynikuForm" content="2cb140dd-d60f-4202-a0f6-5aa598e37244" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_m7S60HGDEeywp9JThT5IMA" name="wynik" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_m7S60XGDEeywp9JThT5IMA" definitionId="bonita-actorfilter-initiator" version="1.0">
@@ -144,11 +144,16 @@
             </configuration>
           </filters>
           <contract xmi:type="process:Contract" xmi:id="_wZqloXF2EeyYboQFlhdC-w">
-            <inputs xmi:type="process:ContractInput" xmi:id="_Z4MGUHGCEeywp9JThT5IMA" name="wniosekInput" type="COMPLEX" dataReference="wniosek" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_Z4MGUXGCEeywp9JThT5IMA" name="opis" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_Z4MGUnGCEeywp9JThT5IMA" name="data_zlozenia" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_Z4MGU3GCEeywp9JThT5IMA" name="czy_dane_poprawne" type="BOOLEAN" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_Z4MGVHGCEeywp9JThT5IMA" name="czy_zaakceptowano" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_f6qeUHH_EeycZMF7i_aOcg" name="wniosekInput" type="COMPLEX" dataReference="wniosek" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeUXH_EeycZMF7i_aOcg" name="klient" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeUnH_EeycZMF7i_aOcg" name="nr_zamowienia" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeU3H_EeycZMF7i_aOcg" name="opis" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeVHH_EeycZMF7i_aOcg" name="data_zlozenia" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeVXH_EeycZMF7i_aOcg" name="adres_zamieszkania" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeVnH_EeycZMF7i_aOcg" name="nr_tel" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeV3H_EeycZMF7i_aOcg" name="email" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeWHH_EeycZMF7i_aOcg" name="czy_dane_poprawne" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_f6qeWXH_EeycZMF7i_aOcg" name="czy_zaakceptowano" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_wZqlpHF2EeyYboQFlhdC-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -159,14 +164,14 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_4pAQgXF0EeyYboQFlhdC-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_4pAQgHF0EeyYboQFlhdC-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_4pAQgnF0EeyYboQFlhdC-w" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_-GLp8nF_Eeywp9JThT5IMA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_-GLp83F_Eeywp9JThT5IMA" name="wniosek" content="wniosek" type="TYPE_VARIABLE" returnType="com.company.model.Wniosek">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-GLp9HF_Eeywp9JThT5IMA" name="wniosek" dataType="_qAsY9HFzEeyYboQFlhdC-w" className="com.company.model.Wniosek"/>
+          <operations xmi:type="expression:Operation" xmi:id="_DMnbJHH-EeycZMF7i_aOcg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_DMnbJXH-EeycZMF7i_aOcg" name="wniosek" content="wniosek" type="TYPE_VARIABLE" returnType="com.company.model.Wniosek">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DMnbJnH-EeycZMF7i_aOcg" name="wniosek" dataType="_qAsY9HFzEeyYboQFlhdC-w" className="com.company.model.Wniosek"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_-GLp9XF_Eeywp9JThT5IMA" name="wniosekInput.czy_dane_poprawne" content="wniosekInput?.czy_dane_poprawne" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_-GLp9nF_Eeywp9JThT5IMA" name="wniosekInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_DMnbJ3H-EeycZMF7i_aOcg" name="wniosekInput.czy_dane_poprawne" content="wniosekInput?.czy_dane_poprawne" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_DMnbKHH-EeycZMF7i_aOcg" name="wniosekInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_-GLp93F_Eeywp9JThT5IMA" type="JAVA_METHOD" expression="setCzy_dane_poprawne">
+            <operator xmi:type="expression:Operator" xmi:id="_DMnbKXH-EeycZMF7i_aOcg" type="JAVA_METHOD" expression="setCzy_dane_poprawne">
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
@@ -176,15 +181,19 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_4pAQh3F0EeyYboQFlhdC-w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_4pAQhnF0EeyYboQFlhdC-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_4pAQiXF0EeyYboQFlhdC-w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Kzg4IHGAEeywp9JThT5IMA" name="poprawnoscDanych" content="a2c6bd2d-a306-4a15-9b7c-b90fc7112e77" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_NPFlcHH-EeycZMF7i_aOcg" name="sprawdzeniePoprawnosciForm" content="cc126e91-1392-4b6c-8055-03da305707c4" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_4pAQiHF0EeyYboQFlhdC-w">
-            <inputs xmi:type="process:ContractInput" xmi:id="_-GLC0HF_Eeywp9JThT5IMA" name="wniosekInput" type="COMPLEX" dataReference="wniosek" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_-GLC0XF_Eeywp9JThT5IMA" name="klient" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_-GLC0nF_Eeywp9JThT5IMA" name="opis" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_-GLC03F_Eeywp9JThT5IMA" name="data_zlozenia" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_-GLC1HF_Eeywp9JThT5IMA" name="czy_dane_poprawne" type="BOOLEAN" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_-GLC1XF_Eeywp9JThT5IMA" name="czy_zaakceptowano" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_DMna8HH-EeycZMF7i_aOcg" name="wniosekInput" type="COMPLEX" dataReference="wniosek" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna8XH-EeycZMF7i_aOcg" name="klient" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna8nH-EeycZMF7i_aOcg" name="nr_zamowienia" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna83H-EeycZMF7i_aOcg" name="opis" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna9HH-EeycZMF7i_aOcg" name="data_zlozenia" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna9XH-EeycZMF7i_aOcg" name="adres_zamieszkania" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna9nH-EeycZMF7i_aOcg" name="nr_tel" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna93H-EeycZMF7i_aOcg" name="email" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna-HH-EeycZMF7i_aOcg" name="czy_dane_poprawne" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_DMna-XH-EeycZMF7i_aOcg" name="czy_zaakceptowano" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_4pAQi3F0EeyYboQFlhdC-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -228,14 +237,14 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_bFUTsXF1EeyYboQFlhdC-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_bFUTsHF1EeyYboQFlhdC-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_bFUTsnF1EeyYboQFlhdC-w" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_XzqfXnGBEeywp9JThT5IMA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_XzqfX3GBEeywp9JThT5IMA" name="wniosek" content="wniosek" type="TYPE_VARIABLE" returnType="com.company.model.Wniosek">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XzqfYHGBEeywp9JThT5IMA" name="wniosek" dataType="_qAsY9HFzEeyYboQFlhdC-w" className="com.company.model.Wniosek"/>
+          <operations xmi:type="expression:Operation" xmi:id="_DhaxCnH_EeycZMF7i_aOcg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_DhaxC3H_EeycZMF7i_aOcg" name="wniosek" content="wniosek" type="TYPE_VARIABLE" returnType="com.company.model.Wniosek">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DhaxDHH_EeycZMF7i_aOcg" name="wniosek" dataType="_qAsY9HFzEeyYboQFlhdC-w" className="com.company.model.Wniosek"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XzqfYXGBEeywp9JThT5IMA" name="wniosekInput.czy_zaakceptowano" content="wniosekInput?.czy_zaakceptowano" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XzqfYnGBEeywp9JThT5IMA" name="wniosekInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_DhaxDXH_EeycZMF7i_aOcg" name="wniosekInput.czy_zaakceptowano" content="wniosekInput?.czy_zaakceptowano" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_DhaxDnH_EeycZMF7i_aOcg" name="wniosekInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_XzqfY3GBEeywp9JThT5IMA" type="JAVA_METHOD" expression="setCzy_zaakceptowano">
+            <operator xmi:type="expression:Operator" xmi:id="_DhaxD3H_EeycZMF7i_aOcg" type="JAVA_METHOD" expression="setCzy_zaakceptowano">
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
@@ -245,15 +254,19 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_bFUTt3F1EeyYboQFlhdC-w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_bFUTtnF1EeyYboQFlhdC-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_bFUTuXF1EeyYboQFlhdC-w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_aBj6MHGBEeywp9JThT5IMA" name="rozpatrzenieWniosku" content="d4daf816-d884-4010-8c68-bfc3467a606f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_F-11gHH_EeycZMF7i_aOcg" name="rozpatrzenieWnioskuForm" content="fcaadff7-5488-4a79-9353-564f067df730" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_bFUTuHF1EeyYboQFlhdC-w">
-            <inputs xmi:type="process:ContractInput" xmi:id="_XzqfQHGBEeywp9JThT5IMA" name="wniosekInput" type="COMPLEX" dataReference="wniosek" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_XzqfQXGBEeywp9JThT5IMA" name="klient" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XzqfQnGBEeywp9JThT5IMA" name="opis" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XzqfQ3GBEeywp9JThT5IMA" name="data_zlozenia" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XzqfRHGBEeywp9JThT5IMA" name="czy_dane_poprawne" type="BOOLEAN" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XzqfRXGBEeywp9JThT5IMA" name="czy_zaakceptowano" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw0HH_EeycZMF7i_aOcg" name="wniosekInput" type="COMPLEX" dataReference="wniosek" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw0XH_EeycZMF7i_aOcg" name="klient" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw0nH_EeycZMF7i_aOcg" name="nr_zamowienia" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw03H_EeycZMF7i_aOcg" name="opis" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw1HH_EeycZMF7i_aOcg" name="data_zlozenia" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw1XH_EeycZMF7i_aOcg" name="adres_zamieszkania" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw1nH_EeycZMF7i_aOcg" name="nr_tel" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw13H_EeycZMF7i_aOcg" name="email" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw2HH_EeycZMF7i_aOcg" name="czy_dane_poprawne" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Dhaw2XH_EeycZMF7i_aOcg" name="czy_zaakceptowano" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_bFUTu3F1EeyYboQFlhdC-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
